@@ -22,6 +22,10 @@ exports.typeDefs = `
     getAllRecipes: [Recipe]
   }
 
+  type Token {
+    token
+  }
+
   type Mutation {
     addRecipe(name: String!, description: String!, category: String!, instructions: String!, username: String): Recipe
   }
